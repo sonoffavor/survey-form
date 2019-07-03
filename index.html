@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lifestyle Survey</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/clipboard.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Karma|Oswald:600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <header>
+        <div>
+            <div class="title">
+                <img class="clipboard-logo" src="images/clipboard.png" alt="clipboard-logo">
+                <h1 id="title">Lifestyle Survey Form</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="form-container">
+            <p id="description">Let us know how we can best serve our community</p>
+            <form id="survey-form" action="">
+
+                <div class="question-one">
+                    <h2>
+                        *How would you rate your health?
+                    </h2>
+                    <div class="question-one-container">
+                        <div class="question-one-item-1">
+                            <label for="excellent">
+                                <input id="excellent" type="radio" name="rate-health" value="excellent" required>
+                                Excellent</label>
+                        </div>
+                        <div class="question-one-item-2">
+                            <label for="good">
+                                <input id="good" type="radio" name="rate-health" value="good"> Good</label>
+                        </div>
+                        <div class="question-two-item-3">
+                            <label for="fair">
+                                <input id="fair" type="radio" name="rate-health" value="fair"> Fair</label>
+                        </div>
+                        <div class="question-three-item-4">
+                            <label for="poor">
+                                <input id="poor" type="radio" name="rate-health" value="poor"> Poor</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-two">
+                    <h2>
+                        How often do you exercise?
+                    </h2>
+                    <select name="exercise-frequency" id="dropdown" class="dropdown">
+                        <option disabled="" value="">Select an option</option>
+                        <option value="5 or more times a week">5 or more times a week</option>
+                        <option value="Less than 2 times a week">Less than 2 times a week</option>
+                        <option value="2 - 4 times a week">2 - 4 times a week</option>
+                        <option value="Never">Never</option>
+                    </select>
+                </div>
+                <div class="question-three">
+                    <h2>
+                        What foods do you consider harmful?
+                    </h2>
+                    <textarea name="question-three-comment" id="question-three-field" class="question-three-field"
+                        style="height:25px; resize:vertical;" placeholder="Enter foods"></textarea>
+                </div class="question-four">
+                <h2>
+                    How many glasses of water do you drink each day?
+                </h2>
+                <select name="water-frequency" id="water-dropdown" class="water-dropdown">
+                    <option disabled="" value="">Select an option</option>
+                    <option value="None">None</option>
+                    <option value="1 - 3">1 - 3</option>
+                    <option value="4 - 6">4 - 6</option>
+                    <option value="7 or more">7 or more</option>
+                </select>
+                <div class="question-five">
+                    <h2>
+                        What do you think is the greatest danger to American's health today?
+                    </h2>
+                    <textarea name="question-five-comment" id="question-five-field" class="question-five-field"
+                        style="height:25px; resize:vertical" placeholder="Enter your answer"></textarea>
+                </div>
+                <div class="question-six">
+                    <h2>
+                        In what areas of your life would you like to improve your health?
+                    </h2>
+                    <div class="question-six-selection-container">
+                        <div class="question-six-item-1">
+                            <label for="exercise">
+                                <input type="checkbox" name="health-improvement" id="exercise" value="exercise">
+                                Exercise</label>
+                        </div>
+                        <div class="question-six-item-2">
+                            <label for="nutrition">
+                                <input type="checkbox" name="health-improvement" id="nutrition" value="nutrition">
+                                Nutrition</label>
+                        </div>
+                        <div class="question-six-item-3">
+                            <label for="sleep">
+                                <input type="checkbox" name="health-improvement" id="sleep" value="sleep"> Sleep</label>
+                        </div>
+                        <div class="question-six-item-4">
+                            <label for="beverages">
+                                <input type="checkbox" name="health-improvement" id="beverages" value="beverages">
+                                Beverages</label>
+                        </div>
+                        <div class="question-six-item-5">
+                            <label for="smoking">
+                                <input type="checkbox" name="health-improvement" id="smoking" value="smoking">
+                                Smoking</label>
+                        </div>
+                        <div class="question-six-item-6">
+                            <label for="stress-management">
+                                <input type="checkbox" name="health-improvement" id="stress-management"
+                                    value="stress-management"> Stress
+                                Management</label>
+                        </div>
+                        <div class="question-six-item-7">
+                            <label for="other">
+                                <input type="checkbox" name="health-improvement" id="other" value="other"> Other</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-seven">
+                    <h2>
+                        How important is your spiritual life to your overall health?
+                    </h2>
+                    <select name="spiritual-life-health" id="spiritual-life-health-dropdown"
+                        class="spiritual-life-health-dropdown">
+                        <option disabled="" value="">Select an option</option>
+                        <option value="Not Important">Not Important</option>
+                        <option value="Somewhat Important">Somewhat Important</option>
+                        <option value="Very Important">Very Important</option>
+                    </select>
+                </div>
+                <div class="question-eight">
+                    <h2>
+                        Which of the following programs or activities would you be interested in attending if they
+                        were held in your area?
+                    </h2>
+                    <div class="question-eight-container">
+                        <div class="question-8-item-1">
+                            <label for="healthful-cooking-class">
+                                <input type="checkbox" name="program-potentials" id="healthful-cooking-class"
+                                    value="healthful-cooking-class"> Healthful
+                                Cooking Class</label>
+                        </div>
+                        <div class="question-8-item-2">
+                            <label for="stress-management-class">
+                                <input type="checkbox" name="program-potentials" id="stress-management-class"
+                                    value="stress-management-class"> Stress
+                                Management Class</label>
+                        </div>
+                        <div class="question-8-item-3">
+                            <label for="money-management-seminar">
+                                <input type="checkbox" name="program-potentials" id="money-management-seminar"
+                                    value="money-management-seminar"> Money
+                                Management Seminar</label>
+                        </div>
+                        <div class="question-8-item-4">
+                            <label for="personal-bible-studies">
+                                <input type="checkbox" name="program-potentials" id="personal-bible-studies"
+                                    value="personal-bible-studies"> Personal
+                                Bible Studies</label>
+                        </div>
+                        <div class="question-8-item-5">
+                            <label for="vacation-bible-school">
+                                <input type="checkbox" name="program-potentials" id="vacation-bible-school"
+                                    value="vacation-bible-school"> Vacation
+                                Bible School</label>
+                        </div>
+                        <div class="question-8-item-6">
+                            <label for="weight-loss-program">
+                                <input type="checkbox" name="program-potentials" id="weight-loss-program"
+                                    value="weight-loss-program"> Weight-loss
+                                Program</label>
+                        </div>
+                        <div class="question-8-item-7">
+                            <label for="stop-smoking-clinic">
+                                <input type="checkbox" name="program-potentials" id="stop-smoking-clinic"
+                                    value="stop-smoking-clinic"> Stop Smoking
+                                Clinic</label>
+                        </div>
+                        <div class="question-8-item-8">
+                            <label for="depression-recovery-seminar">
+                                <input type="checkbox" name="program-potentials" id="depression-recovery-seminar"
+                                    value="depression-recovery-seminar">
+                                Depression Recovery Seminar</label>
+                        </div>
+                        <div class="question-8-item-9">
+                            <label for="bible-prophecy-seminar">
+                                <input type="checkbox" name="program-potentials" id="bible-prophecy-seminar"
+                                    value="bible-prophecy-seminar"> Bible
+                                Prophecy Seminar</label>
+                        </div>
+                        <div class="question-8-item-10">
+                            <label for="social-activities">
+                                <input type="checkbox" name="program-potentials" id="social-activities"
+                                    value="social-activities"> Social
+                                Activities</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-information-container">
+                    <div class="contact-information-container-1">
+                        <div class="contact-information-item-1">
+                            <label id="name-label" for="name">*Name</label>
+                            <input id="name" class="input-field" autofocus="" type="text" name="name"
+                                placeholder="Enter your name" required="">
+                        </div>
+                        <div class="contact-information-item-2">
+                            <label id="address-label" for="address">Address</label>
+                            <input type="text" name="address" id="address" class="input-field" autofocus=""
+                                placeholder="Enter your address">
+                        </div>
+                        <div class="contact-information-item-3">
+                            <label id="phone-label" for="phone">Phone</label>
+                            <input type="text" name="phone" id="phone" class="input-field" autofocus=""
+                                placeholder="Enter your phone number">
+                        </div>
+                    </div>
+                    <div class="contact-information-container-2">
+                        <div class="contact-information-item-4">
+                            <label id="number-label" for="age">*Age</label>
+                            <input type="number" name="age" id="number" class="input-field" min="1" max="125"
+                                autofocus="" placeholder="Enter your age" required="">
+                        </div>
+                        <div class="contact-information-item-5">
+                            <label id=zip-code-label for="zip-code">Zip Code</label>
+                            <input type="text" name="zip-code" id="zip-code" class="input-field" autofocus=""
+                                placeholder="Enter your zip code">
+                        </div>
+                        <div class="contact-information-item-6">
+                            <label id="email-label" for="email">*Email</label>
+                            <input type="email" name="email" id="email" class="input-field" autofocus=""
+                                placeholder="Enter your email" required="">
+                        </div>
+                    </div>
+                </div>
+                <button id="submit" type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="contributers-container">
+            <div class="contributer-freepik">Icons made by <a href="https://www.freepik.com/"
+                    title="Freepik">Freepik</a>
+                from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
+                    href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+                    target="_blank">CC
+                    3.0 BY</a>
+            </div>
+            <div class="contributer-hadrien">Icons made by <a href="https://www.flaticon.com/authors/hadrien"
+                    title="Hadrien">Hadrien</a> from <a href="https://www.flaticon.com/"
+                    title="Flaticon">www.flaticon.com</a> is licensed by <a
+                    href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+                    target="_blank">CC
+                    3.0 BY</a>
+            </div>
+        </div>
+        <div class="copyright-contact-container">
+            <div class="copyright">
+                <label>© Ben Rietman 2019</label>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="personal-contact-information">
+                <a href="mailto:rietmanb@hyahoo.com?subject=feedback" class="fa fa-envelope"></a>
+                <a href="https://www.linkedin.com/in/benjamin-rietman-346a07164/" class="fa fa-linkedin"
+                    target="_blank"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
